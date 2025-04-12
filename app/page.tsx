@@ -1,5 +1,5 @@
 
-
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 export default function Home() {
@@ -9,7 +9,9 @@ export default function Home() {
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           Taxing Laughter: The Joke Tax Chronicles
         </h1>
-        <Button className="mt-4">Get Started</Button>
+        <Link href="/dashboard">
+          <Button className="mt-4">Get Started</Button>
+        </Link>
       </div>
     </div>
   );

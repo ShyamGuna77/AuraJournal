@@ -1,7 +1,8 @@
 
 // app/sign-in/[[...sign-in]]/page.tsx
+// app/sign-in/[[...sign-in]]/page.tsx
 import { SignIn } from '@clerk/nextjs';
 
-export default function SignInPage() {
-  return <SignIn />;
+export default function Page() {
+  return <SignIn forceRedirectUrl ="/dashboard" />;
 }
